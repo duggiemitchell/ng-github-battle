@@ -17,5 +17,7 @@ export class PopularComponent implements OnInit {
   }
   constructor(private reposService: ReposService) {}
 
-  ngOnInit() {}
+  ngOnInit(): void {
+    this.onSelect(this.selectedLanguage);
+  }
 }
