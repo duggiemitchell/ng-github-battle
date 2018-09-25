@@ -1,0 +1,3 @@
+<ul class="popular-list">
+    <li *ngFor="let lang of languages" [class.selected]="lang === selectedLanguage" (click)="onSelect(lang)">{{lang}}</li>
+</ul>
